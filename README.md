@@ -17,6 +17,11 @@ docker run -v $(pwd):/downloads youtube-dl:latest [{youtube-dl options}] {youtub
 ## Example
 
 ```bash
+$ docker run --rm youtube-dl:latest --version
+2021.04.17
+```
+
+```bash
 docker run -v $(pwd):/downloads youtube-dl:latest -f 136+140 'https://www.youtube.com/watch?v=E5FS_Yy3WGM'
 ```
 
